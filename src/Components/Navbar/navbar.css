@@ -1,0 +1,15 @@
+nav {
+    height: 6rem;
+    width: 100%;
+    background-color: var(--gray-color);
+    display: grid;
+    place-items: center;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.nav-container {
+    height: 100%;
+    display: flex;
+}
