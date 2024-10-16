@@ -14,13 +14,15 @@ const App = () => {
   return (
     <BrowserRouter>
         <Navbar />
-        <Home />
-        <About />
-        <Contact />
-        <Gallery />
-        <Featured />
-        <Workers />
-        <NotFound />
+        <Routes>
+          <Route index element={<Home/>} />
+          <Route path='about' element={<About/>} />
+          <Route path='contact' element={<Contact/>} />
+          <Route path='gallery' element={<Gallery/>} />
+          <Route path='featured' element={<Featured/>} />
+          <Route path='workers' element={<Workers/>} />
+          <Route path='*' element={<NotFound/>} />
+        </Routes>
     </BrowserRouter>
   )
 }
