@@ -1,0 +1,37 @@
+.hero-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    margin-top: 3rem;
+}
+
+.hero-container {
+    height: 100%;
+    display: grid;
+    gap: 6rem;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-left h4 {
+    margin-bottom: 1rem;
+    color: var(--orange);
+    font-weight: 500;
+}
+
+.hero-left p {
+    margin: 1rem 0 3rem;
+    font-size: 1.1rem;
+}
+
+.hero-right {
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.hero-right img {
+    border-radius: 1rem;
+}

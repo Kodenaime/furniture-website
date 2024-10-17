@@ -41,6 +41,10 @@ body {
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    display: none;
+  }
+
 .container {
     width: var(--container-lg);
     max-width: 1920px;
@@ -69,4 +73,36 @@ img {
     display: block;
     object-fit: cover;
     width: 100%;
+}
+
+.btn {
+    color: var(--white-color);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.7rem 2rem;
+    background: var(--primary-color);
+    border-radius: 0.8rem;
+    border: 2px solid var(--primary-color);
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--primary-color);
+}
+
+.btn-primary {
+    color: var(--primary-color);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.7rem 2rem;
+    background: var(--orange);
+    border-radius: 0.8rem;
+    border: 2px solid var(--orange);
+    transition: var(--transition);
+}
+
+.btn-primary:hover {
+    background: transparent;
+    color: var(--primary-color);
 }
