@@ -1,32 +1,34 @@
-import { SiOpenapiinitiative } from "react-icons/si"
+import { GiStakeHammer } from "react-icons/gi";
 
-export const productsInfo = [
+
+
+export const programs = [
     {
         id: 1,
-        icon: <SiOpenapiinitiative/>,
+        icon: <GiStakeHammer/>,
         title: "Program One",
         info: "This is the day that the lord has made. We will rejoice!",
-        path: "/products/111"
+        path: "/programs/111"
     },
     {
         id: 2,
-        icon: <SiOpenapiinitiative/>,
+        icon: <GiStakeHammer/>,
         title: "Program Two",
         info: "This is the day that the lord has made. We will rejoice!",
-        path: "/products/222"
+        path: "/programs/222"
     },
     {
         id: 3,
-        icon: <SiOpenapiinitiative/>,
+        icon: <GiStakeHammer/>,
         title: "Program Three",
         info: "This is the day that the lord has made. We will rejoice!",
-        path: "/products/333"
+        path: "/programs/333"
     },
     {
         id: 4,
-        icon: <SiOpenapiinitiative/>,
+        icon: <GiStakeHammer/>,
         title: "Program Four",
         info: "This is the day that the lord has made. We will rejoice!",
-        path: "/products/444"
+        path: "/programs/444"
     }
 ]

@@ -106,3 +106,21 @@ img {
     background: transparent;
     color: var(--primary-color);
 }
+
+section {
+    margin-top: 8rem;
+}
+
+.section-head {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.section-head span {
+    background: var(--white-color);
+    padding: 0.8rem;
+    border-radius: 1rem;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+} 
