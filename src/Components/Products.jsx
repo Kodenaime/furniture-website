@@ -12,20 +12,21 @@ const Products = () => {
     <section className="products">
         <div className="container products-container">
             <SectionHead icon={<FaCrown />} title="Products" />
-        </div>
-        <div className="product-cards">
-              {
-                programs.map(({id, icon, title, info, path}) => {
-                    return (
-                        <Card className="products-product" key={id} >
-                            <span>{ icon }</span>
-                            <h4>{ title }</h4>
-                            <small>{ info }</small>
-                            <Link to={path} className='btn-primary'>Learn More  <VscTriangleRight />  </Link>
-                        </Card>
-                    )
-                })
-              }
+            
+            <div className="product-cards">
+                {
+                    programs.map(({id, icon, title, info, path}) => {
+                        return (
+                            <Card className="products-product" key={id} >
+                                <span>{ icon }</span>
+                                <h4>{ title }</h4>
+                                <small>{ info }</small>
+                                <Link to={path} className='btn-primary-sm'>Learn More  <VscTriangleRight />  </Link>
+                            </Card>
+                        )
+                    })
+                }
+            </div> 
         </div>
     </section>
   )

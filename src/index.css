@@ -14,7 +14,9 @@
 
 :root {
     --primary-color: #D28B55;
+    --primary-light: rgba(210, 139, 85, 0.2);
     --white-color: #F7FFF7;
+    --light-color: rgba(247, 255, 247, 0.55);
     --black-color: #343434;
     --gray-color: #636564;
     --yellow: #FFFD82;
@@ -86,7 +88,23 @@ img {
     transition: var(--transition);
 }
 
+.btn-sm {
+    color: var(--white-color);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    background: var(--primary-color);
+    border-radius: 0.8rem;
+    border: 2px solid var(--primary-color);
+    transition: var(--transition);
+}
+
 .btn:hover {
+    background: transparent;
+    color: var(--primary-color);
+}
+
+.btn-sm:hover {
     background: transparent;
     color: var(--primary-color);
 }
@@ -102,7 +120,23 @@ img {
     transition: var(--transition);
 }
 
+.btn-primary-sm {
+    color: var(--white-color);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    background: var(--orange);
+    border-radius: 0.5rem;
+    border: 2px solid var(--orange);
+    transition: var(--transition);
+}
+
 .btn-primary:hover {
+    background: transparent;
+    color: var(--primary-color);
+}
+
+.btn-primary-sm:hover {
     background: transparent;
     color: var(--primary-color);
 }
@@ -118,9 +152,49 @@ section {
 }
 
 .section-head span {
-    background: var(--white-color);
+    background: var(--primary-light);
     padding: 0.8rem;
     border-radius: 1rem;
     color: var(--primary-color);
     font-size: 1.5rem;
-} 
+}
+
+.card {
+    background: var(--primary-light);
+    border: 2px solid transparent;
+    text-align: center;
+    padding: 3rem 2rem;
+    border-radius: 0 3rem 0 3rem;
+    transition: var(--transition);
+}
+
+.card:hover {
+    background: transparent;
+    border-color: var(--primary-color);
+    cursor: default;
+}
+
+.card span {
+    width: 3rem;
+    height: 3rem;
+    background: var(--primary-color);
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    display: grid;
+    place-items: center;
+    margin-bottom: 1.5rem;
+    margin-inline: auto;
+    border-radius: 1rem;
+    transition: var(--transition);
+}
+
+.card:hover span {
+    background: var(--orange);
+    color: var(--white-color);
+}
+
+.card small {
+    margin-top: 1rem;
+    display: block;
+    font-weight: 300;
+}

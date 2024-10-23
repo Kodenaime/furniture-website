@@ -37,3 +37,67 @@
 }
 
 
+/*-----------------------------------*\
+  #PRODUCT SECTION STYLES
+\*-----------------------------------*/
+
+.products {
+    margin-top: 3rem;
+}
+
+.product-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem; 
+}
+
+.products-product a {
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*-----------------------------------*\
+  #VALUES SECTION STYLES
+\*-----------------------------------*/
+
+.values-container {
+    display: grid;
+    grid-template-columns: 38% 50%;
+    gap: 12%;
+}
+
+.values-image {
+    filter: saturate(0.3);
+    transition: var(--transition);
+}
+
+.values-image:hover {
+    filter: saturate(1);
+}
+
+.values-right {
+    margin: 1.5rem 0 4rem; 
+}
+
+.values-right p {
+    margin-bottom: 3rem;
+}
+
+.values-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 2rem;
+}
+
+.card.values-value {
+    padding-top: 3rem;
+    text-align: left;
+    position: relative;
+}
+
+.card.values-value span {
+    position: absolute;
+    top: -1.5rem;
+}
