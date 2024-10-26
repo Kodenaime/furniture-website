@@ -4,6 +4,8 @@ import './home.css'
 import Hero  from '../../Components/Hero'
 import Products from '../../Components/Products'
 import Values from '../../Components/Values'
+import FAQs from '../../Components/FAQs'
+import Testimonials from '../../Components/Testimonials'
 
 const Home = () => {
   return (
@@ -11,6 +13,8 @@ const Home = () => {
       <Hero />
       <Products />
       <Values />
+      <FAQs />
+      <Testimonials />
     </>
   )
 }

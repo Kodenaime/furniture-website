@@ -101,3 +101,71 @@
     position: absolute;
     top: -1.5rem;
 }
+    
+
+
+/*-----------------------------------*\
+  #FAQS SECTION STYLES
+\*-----------------------------------*/
+
+.faqs-cards {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 5rem;
+    align-items: flex-start;
+}
+
+.faq {
+    background: var(--primary-light);
+    padding: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.faq div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-icon {
+    background: transparent;
+    color: var(--orange);
+    font-size: 1.5rem;
+}
+
+.faq p {
+    margin-top: 1.5rem;
+}
+
+
+/*-----------------------------------*\
+  #TESTIMONIALS SECTION STYLES
+\*-----------------------------------*/
+
+.testimonials {
+    width: 50rem;
+    margin-inline: auto;
+}
+
+.test-head {
+    justify-content: center;
+}
+
+.card.test {
+    position: relative;
+    text-align: left;
+    margin-top: 4rem;
+}
+
+.test-avatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    position: absolute;
+    top: -2rem;
+    left: calc( 50% - 2rem);
+    box-shadow: 0 1.5rem 2rem rgba(26, 26, 54, 0.4);
+}

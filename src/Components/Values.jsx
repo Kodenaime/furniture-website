@@ -20,7 +20,7 @@ const Values = () => {
                 <div className="values-cards">
                     {
                         values.map(({id, icon, title, desc}) => {
-                            return <Card className="values-value">
+                            return <Card key={id}  className="values-value">
                                 <span>{ icon }</span>
                                 <h4>{ title }</h4>
                                 <small>{ desc }</small>
