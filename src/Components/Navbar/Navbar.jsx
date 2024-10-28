@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom'
+import logo from '../../Assets/logo.png'
 import { links } from './links'
 import { AiOutlineBars } from "react-icons/ai";
 import { FaRegWindowClose } from "react-icons/fa";
@@ -15,7 +16,7 @@ const Navbar = () => {
     <nav>
       <div className="container nav-container">
         <Link to="/" className="logo" onClick={() => setNavShowing(false)} >
-          KODE
+          <img src={logo} alt="" />
         </Link>
         <ul className={`nav-links ${navShowing ? 'show-nav' : 'hide-nav'}`}>
             {

@@ -1,0 +1,115 @@
+footer {
+    background: var(--gray-color);
+    margin-top: 5rem;
+    padding-top: 5rem;
+    font-size: 1rem;
+
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 26rem 1fr 1fr 1fr;
+    gap: 5rem;
+}
+
+.footer-container article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+}
+
+.footer-container article p {
+    color: var(--white-color);
+    margin-top: 0.7rem;
+}
+
+.footer-container article h4 {
+    margin-bottom: 0.7rem;
+    font-size: 1.2rem;
+    color: var(--orange);
+}
+
+.footer-container article a h6:hover {
+    color: var(--orange);
+    letter-spacing: 0.2rem;
+    font-size: 1rem;
+}
+
+.footer-socials {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer-socials a {
+    background: var(--white-color);
+    padding: 0.5rem;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+}
+
+.footer-socials a svg {
+    color: var(--orange);
+    font-size: 1.2rem;
+}
+
+.footer-socials a:hover {
+    border-color: var(--orange);
+    background: transparent;
+    
+}
+
+.footer-socials a svg:hover {
+    color: var(--white-color);
+}
+
+.footer-down {
+    color: var(--white-color);
+    text-align: center;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--light-color);
+    margin-top: 4rem;
+}
+
+
+/*-----------------------------------*\
+  #RESPONSIVENESS   FOR MEDIUM SCREENS
+\*-----------------------------------*/
+
+@media screen and (max-width: 1000px) {
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+}
+
+
+
+
+/*-----------------------------------*\
+  #RESPONSIVENESS   FOR SMALL SCREENS
+\*-----------------------------------*/
+
+@media screen and (max-width: 1000px) {
+    footer {
+        margin-top: 5.5rem;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .footer-container article {
+        align-items: center;
+    }
+
+    .footer-container article p {
+        text-align: center;
+    }
+}

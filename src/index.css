@@ -198,3 +198,44 @@ section {
     display: block;
     font-weight: 300;
 }
+
+
+
+
+/*-----------------------------------*\
+  #RESPONSIVENESS   FOR MEDIUM SCREENS
+\*-----------------------------------*/
+
+@media screen and (max-width: 1000px) {
+    .container {
+        width: var(--container-md);
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+}
+
+
+/*-----------------------------------*\
+  #RESPONSIVENESS   FOR SMALL SCREENS
+\*-----------------------------------*/
+
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-md);
+    }
+
+    h1 {
+        font-size: 2.2rem;
+        line-height: 1.3;
+    }
+
+    
+}
