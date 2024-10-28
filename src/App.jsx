@@ -9,6 +9,7 @@ import Home from '../src/Pages/Home/Home'
 import NotFound from './Pages/NotFound/NotFound'
 import Workers from './Pages/Workers/Workers'
 import Navbar from './Components/Navbar/Navbar'
+import Footer from './Components/Footer/Footer'
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
           <Route path='workers' element={<Workers/>} />
           <Route path='*' element={<NotFound/>} />
         </Routes>
+        <Footer />
     </BrowserRouter>
   )
 }
