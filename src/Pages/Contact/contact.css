@@ -1,0 +1,49 @@
+.contact-container {
+    display: grid;
+    place-items: center;
+}
+
+.contact-wrap {
+    display: flex;
+    width: fit-content;
+    gap: 2rem;
+}
+
+.contact-wrap a {
+    background: var(--primary-light);
+    color: var(--orange);
+    font-size: 2rem;
+    border: 2px solid transparent;
+    transition: var(--transition);
+    padding: 1.4rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-wrap a:hover {
+    background: transparent;
+    color: var(--gray-color);
+    border-color: var(--orange);
+    transform: scale(1.1);
+}
+
+
+
+/*-----------------------------------*\
+  #RESPONSIVENESS   FOR SMALL SCREENS
+\*-----------------------------------*/
+
+
+
+@media screen and (max-width: 600px) {
+    .contact-wrap {
+        gap: 1.5rem;
+    }
+
+    .contact-wrap a {
+        padding: 1rem;
+        font-size: 1.2rem;
+        border-radius: 0.75rem;
+    }
+}
