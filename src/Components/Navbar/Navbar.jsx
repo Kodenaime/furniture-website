@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom'
 import logo from '../../Assets/logo.png'
-import { links } from './links'
+import { links } from '../../Data/links'
 import { AiOutlineBars } from "react-icons/ai";
 import { FaRegWindowClose } from "react-icons/fa";
 

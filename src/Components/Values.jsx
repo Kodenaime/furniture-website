@@ -2,7 +2,7 @@ import React from 'react'
 import value from '../Assets/value.jpg'
 import SectionHead from '../Components/SectionHead'
 import { GiShakingHands } from "react-icons/gi";
-import { values } from '../Pages/Home/values'
+import { values } from '../Data/values'
 import Card from '../UI/Card'
 
 const Values = () => {

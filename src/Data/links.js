@@ -11,10 +11,10 @@ export const links = [
         name: "Gallery",
         path: '/gallery'
     },
-    {
-        name: "Featured",
-        path: '/featured'
-    },
+    // {
+    //     name: "Featured",
+    //     path: '/featured'
+    // },
     {
         name: "Workers",
         path: '/workers'

@@ -1,0 +1,76 @@
+.workers-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.card.worker {
+    padding: 1rem;
+}
+
+.worker-image {
+    border-radius: 0 2rem;
+}
+
+.worker h3 {
+    margin-top: 1rem;
+}
+
+.worker p {
+    margin-top: 0.6rem;
+    font-weight: bolder;
+}
+
+.worker-socials {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.worker-socials a {
+    background: var(--white-color);
+    color: var(--orange);
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    border: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.worker-socials a:hover {
+    border-color: var(--gray-color);
+}
+
+
+/*-----------------------------------*\
+  #RESPONSIVENESS   FOR MEDIUM SCREENS
+\*-----------------------------------*/
+
+@media screen and (max-width: 1000px) {
+    .workers-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+}
+
+
+/*-----------------------------------*\
+  #RESPONSIVENESS   FOR SMALL SCREENS
+\*-----------------------------------*/
+
+
+
+@media screen and (max-width: 600px) {
+    .workers-container {
+        grid-template-columns: 1fr;
+        gap: 2  rem;
+    }
+
+    .card.worker {
+        width: 90%;
+        margin-inline: auto;
+    }
+}

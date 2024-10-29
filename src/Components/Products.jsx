@@ -2,7 +2,7 @@ import React from 'react'
 
 import { FaCrown } from 'react-icons/fa'
 import SectionHead from '../Components/SectionHead'
-import { programs } from '../Pages/Home/programs'
+import { programs } from '../Data/programs'
 import Card from '../UI/Card'
 import { Link } from 'react-router-dom'
 import { VscTriangleRight } from "react-icons/vsc";

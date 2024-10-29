@@ -39,7 +39,7 @@ body {
     color: var(--black-color);
     line-height: 1.6;
     overflow-x: hidden;
-    background: var(--white-color);
+    background: var(--white-color) url('./Assets/bg_texture.png');
     scroll-behavior: smooth;
 }
 
@@ -149,6 +149,7 @@ section {
     display: flex;
     align-items: center;
     gap: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .section-head span {
@@ -157,6 +158,8 @@ section {
     border-radius: 1rem;
     color: var(--primary-color);
     font-size: 1.5rem;
+    display: flex;
+    align-items: center;
 }
 
 .card {
@@ -266,12 +269,6 @@ section {
 
    
 }
-
-
-/*-----------------------------------*\
-  #RESPONSIVENESS   FOR SMALL SCREENS
-\*-----------------------------------*/
-
 
 
 @media screen and (max-width: 600px) {
